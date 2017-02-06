@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="origin" fetch="ssh://git@github.com/" />
-  <default revision="master" remote="origin" />
+
+  <remote  name="origin" 
+	   fetch="ssh://git@github.com/" />
+
+  <default revision="master"
+           remote="origin"
+           sync-j="4" />
 
   <project path="lib/plist-lib"
            name="keiji/AndroidPListLib.git" remote="origin" />
 
-  <project path="Po_rc_file.git"
+  <project path="Po_rc_file"
            name="showoowohs/Po_rc_file.git" remote="origin" />
 
   <project path="apps/twicca_megane_plugin"
